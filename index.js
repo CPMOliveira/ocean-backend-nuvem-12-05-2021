@@ -81,6 +81,6 @@ app.delete('/mensagens/:id', async (req, res) => {
   res.send('Mensagem removida com sucesso.');
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
 
 })();
